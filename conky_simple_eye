@@ -75,7 +75,7 @@ lua_draw_hook_post main
 
 # Header with base system info
 TEXT
-${font size=10}${color4}$nodename ${hr 1}
+${font size=10}${color5}$nodename ${hr 1}
 ${offset 15}${font}${color1}$sysname $kernel
 ${offset 15}${font}${color1}Uptime: $uptime
 # ${hwmon 1 temp 2}

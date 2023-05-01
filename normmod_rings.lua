@@ -228,6 +228,7 @@ end
 -- Temperature Eye
 
 function draw_temperature_eye(display)
+--    temperature = tonumber(conky_parse('${hwmon 2 temp 1}'))
     temperature = tonumber(conky_parse('${hwmon 5 temp 1}'))
 --    temperature = tonumber(conky_parse('${sensors | grep "Core 0" | egrep -o "[0-9]+[0-9]" | head -n 1}'))
     if temperature<35 then 
