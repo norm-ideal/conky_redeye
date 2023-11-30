@@ -13,7 +13,7 @@ require 'cairo'
 -- Temperature Eye
 
 function draw_temperature_eye(display)
-    temperature = tonumber(conky_parse('${hwmon 2 temp 2}'))
+    temperature = tonumber(${hwmon 4 temp 1})
     if temperature<35 then 
       temperature=35 
     elseif temperature>85 then 
